@@ -12,7 +12,7 @@ var methodOverride = require('method-override');  // simulates the DELETE and PU
 
 // configuration
 
-mongoose.connect("mongodb://wbh1:***REMOVED***@ds033096.mlab.com:33096/todolisttest");
+mongoose.connect("mongodb://<user>:<pw>@ds033096.mlab.com:33096/todolisttest");
 
 app.use(express.static(__dirname + '/public'));  // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));  // logs every request to the console
